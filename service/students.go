@@ -333,7 +333,7 @@ func isValidStudyStatus(status models.StudyStatus) bool {
 	}
 }
 
-func GetStudentsByGroupID(ctx *gin.Context) {
+func GetGroupStudents(ctx *gin.Context) {
 	id := ctx.Param("id")
 
 	var group models.Group

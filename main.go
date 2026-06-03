@@ -13,8 +13,7 @@ func main() {
 	router.POST("/students", service.CreateStudent)
 	router.PATCH("/students/:id", service.UpdateStudent)
 	router.DELETE("/students/:id", service.DeleteStudent)
-	router.GET("/students/:id/notes", service.GetNotesByStudentID)
-	router.GET("/students/:id/groups", service.GetStudentsByGroupID)
+	router.GET("/groups/:id/students", service.GetGroupStudents)
 
 	router.GET("/groups", service.GetAllGroups)
 	router.GET("/groups/:id", service.GetGroupByID)
